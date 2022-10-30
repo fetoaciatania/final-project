@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="login.css" rel="stylesheet" type="text/css">
   <title>Login Page</title>
-  <script defer src="login-page.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script defer src="login.js"></script>
 </head>
 
 <body>
@@ -24,20 +26,20 @@ class="close" title="Close Modal">&times;</span>
     </div>
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
+      <label for="uname"><b>Username/Email</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <button type="submit">Login</button>
+      <button class="w3-button w3-black w3-round-xxlarge" type="submit">Login</button>   
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="donthaveaccount">Don't have an account?</span>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
