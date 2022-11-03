@@ -4,11 +4,16 @@ body {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 10px;
+  margin: 2px 0 14px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
+  border-radius: 14px !important;
+}
+
+h1 {
+  text-align: center;
 }
 
 /* Add a background color when the inputs get focus */
@@ -19,7 +24,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Set a style for all buttons */
 button {
-  background-color: #e86981;
+  background-color: #FA4C6B;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -27,6 +32,8 @@ button {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  border-radius: 14px;
+  text-align: center;
 }
 
 button:hover {
@@ -41,8 +48,16 @@ button:hover {
 
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
+  width: 49%;
   float: left;
-  width: 50%;
+}
+
+.cancelbtn {
+  margin-right: 1px;
+}
+
+.signupbtn{
+  margin-left: 1px;
 }
 
 /* Add padding to container elements */
@@ -60,7 +75,7 @@ button:hover {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(221, 177, 177);
+  background-color: #e1cfd2;
   padding-top: 50px;
 }
 
@@ -70,12 +85,14 @@ button:hover {
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 14px !important;
 }
 
 /* Style the horizontal ruler */
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
+  border-radius: 14px;
 }
  
 /* The Close Button (x) */
@@ -102,8 +119,9 @@ hr {
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 100px) {
   .cancelbtn, .signupbtn {
      width: 100%;
   }
 }
+
