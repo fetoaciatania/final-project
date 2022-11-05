@@ -79,25 +79,27 @@ img.avatar {
   border-radius: 50%;
 }
 
+
 .container {
-  /* position: relative; */
   padding: 16px;
   height: 100px;
 }
 
+
 .registersection {
 position: relative;
-margin-top: 50px !important;
+margin-top: 20px !important;
 }
+
 
 #donthaveaccount {
   position: absolute;
-  top: 30%;
   left: 50%;
   margin: 0;
   width: 300px;
   transform: translate(-40%, -60%);
 }
+
 
 a:link {
   color: red;
@@ -134,13 +136,15 @@ a:active {
 }
 
 /* Modal Content/Box */
+@media screen and (max-width: 1200px) and (min-width: 360px){
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
   height: 100%;
   padding: 7px;
+}
 }
 
 /* The Close Button (x) */
