@@ -1,6 +1,12 @@
-@import url(//fonts.googleapis.com/css?family=Fredoka+One);
-  
-body {font-family: "FredokaOne-Regular";}
+body {font-family: "Fredoka One";}
+
+@font-face {
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/fredokaone/v13/k3kUo8kEI-tA1RRcTZGmTlHGCac.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -16,7 +22,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #FA4C6B;
+  background-color: #FF4B6C;
   font-family: Fredoka One;
   color: white;
   padding: 14px 20px;
@@ -44,12 +50,42 @@ img.avatar {
 }
 
 .container {
+  /* position: relative; */
   padding: 16px;
+  /* height: 200px; */
 }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
+.registersection {
+position: relative;
+margin-top: 20px;
+}
+
+#donthaveaccount {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  width: 300px;
+  transform: translate(-40%, -60%);
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF8600;
+}
+
+/* selected link */
+a:active {
+  color: #FF8600;
 }
 
 /* The Modal (background) */
@@ -73,6 +109,7 @@ span.psw {
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  height: 75%;
 }
 
 /* The Close Button (x) */
