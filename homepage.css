@@ -1,6 +1,6 @@
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 1000px) {
     .column {
-      width: 100%;
+      width: 70%;
     }
   }
 
@@ -29,20 +29,31 @@ h1 {
     font-size: 16px;
     color: black;
     text-align: center;
-    display: flex;
 }
 
 #articlesroom img {
     width: 50%;
     height: 50%;
-    float: left;
     display: flex;
 }
 
 #asktheexpert img {
     width: 50%;
     height: 50%;
-    float: left;
     display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffdbdb;
+}
+
+.header h1 {
+    color: #222222;
+    font-size: 30px;
+    font-family: "Pacifico", cursive;
 }
 
