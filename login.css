@@ -242,37 +242,7 @@ a:active {
     to {-webkit-transform: scale(1)}
   }
   
-  h1 {
-    color: pink;
-    text-align: left;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  background-color: #ffdbdb;
-}
-
-.header h1 {
-  color: #222222;
-  font-size: 30px;
-  font-family: "Pacifico", cursive;
-}
-
-#navbar-bawah {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: pink;
-  color: palevioletred;
-}
-
-#navbar-bawah a {
-  float: left;
-  font-size: 16px;
-  color: black;
-  text-align: center;
-}
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
