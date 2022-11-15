@@ -1,47 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>GirlsZoneSignUp</title>
-  <link href="register.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="register.css" rel="stylesheet" type="text/css">
+  <title>Login Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+  <script defer src="register.js"></script>
+</head>
+
 <body>
-<h2>Yuk Sign Up-!!</h2>
 
-<button onclick="document.getElementById('form').style.display='block'" style="width:auto;">Sign Up</button>
+  <header>
+    <h1>GirlsZone</h1>
+  <div class="navbar" id="navbar-bawah">
+    <a href="index.html">Home</a>
+    <a href="asktheexpert.html">Chats</a>
+    <a href="#">Articles</a>
+    <a href="#">Others</a>
+    <a href="login.html">Profile</a>
+  </div>
+  </header>
 
-<div id="form" class="modal">
-  <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php" id="form-register">
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Isi form dibawah untuk membuat akun.</p>
-      <hr>
+  <div class="box"> 
+    <div class="logo"> <img src="https://i.pinimg.com/280x280_RS/e6/92/11/e69211585c0f7fed16563c25581b1ba1.jpg" alt="GirlsZone" class="center"> </div>
+  </div>
+  <div class="button"><button onclick="document.getElementById('id01').style.display='block'">Click here to register!</button>
+  </div>
 
-      <label for="username"><b>Username</b></label>
-        <input type="text" placeholder="Masukkan Username" name="username" required>
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
 
-        <label for="psw"><b>Email</b></label>
-        <input type="password" placeholder="Masukkan Email" name="Email" required>
-
-        <label for="psw-repeat"><b>Password</b></label>
-        <input type="password" placeholder="Masukkan Password" name="psw" required>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ingatkan saya
-      </label>
-    </hr>
-
-      <p>Dengan membuat akun kamu menyetujui <a href="#" style="color:dodgerblue">Syarat & Privasi</a>.</p>
-
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('form').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
-      </div>
+  <!-- Modal Content -->
+  <form class="modal-content animate" id="login-form">
+    <div class="imgcontainer">
+      <img src="https://i.pinimg.com/736x/91/0a/91/910a916f15a139978978ae6efafce312.jpg" alt="Avatar" class="avatar">
     </div>
+
+    <!-- <div class="container"> -->
+      <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+<!--         <a href="index.html"> -->
+        <button class="w3-button w3-black w3-round-xxlarge" type="submit" id="login-form-submit">Register</button>   
+<!--         </a> -->
+      <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+    <!-- </div> -->
+
+    <p>By making an account you agree with <a href="#" style="color:dodgerblue">Privacy and Policy</a>.</p>
+
   </form>
 </div>
-  
-  <script src="register.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+	
+	var modal = document.getElementById('id01');
+	
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+	</script>
 
 </html>
