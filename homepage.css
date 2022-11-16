@@ -1,0 +1,59 @@
+@media screen and (max-width: 1000px) {
+    .column {
+      width: 70%;
+    }
+  }
+
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+     
+h1 {
+    color: pink;
+    text-align: left;
+}
+
+
+#navbar-bawah {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: pink;
+    color: palevioletred;
+}
+
+#navbar-bawah a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+#articlesroom img {
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+
+#asktheexpert img {
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffdbdb;
+}
+
+.header h1 {
+    color: #222222;
+    font-size: 30px;
+    font-family: "Pacifico", cursive;
+}
+

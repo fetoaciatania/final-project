@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>GirlsZoneSignUp</title>
+  <link href="register.css" rel="stylesheet" type="text/css" />
+<body>
+<h2>Yuk Sign Up-!!</h2>
+
+<button onclick="document.getElementById('form').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="form" class="modal">
+  <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php" id="form-register">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Isi form dibawah untuk membuat akun.</p>
+      <hr>
+
+      <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Masukkan Username" name="username" required>
+
+        <label for="psw"><b>Email</b></label>
+        <input type="password" placeholder="Masukkan Email" name="Email" required>
+
+        <label for="psw-repeat"><b>Password</b></label>
+        <input type="password" placeholder="Masukkan Password" name="psw" required>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ingatkan saya
+      </label>
+    </hr>
+
+      <p>Dengan membuat akun kamu menyetujui <a href="#" style="color:dodgerblue">Syarat & Privasi</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('form').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+  
+  <script src="register.js"></script>
+</body>
+
+</html>
